@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200325 16:46:31.903" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="C:\Users\prana\PycharmProjects\com.Newtours_RobotFramework\TestCases\LoginTest.robot">
+<test id="s1-s1-t1" name="LoginTest">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200325 16:46:32.136" endtime="20200325 16:46:32.136"></status>
+</kw>
+<status status="PASS" starttime="20200325 16:46:32.135" endtime="20200325 16:46:32.136" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200325 16:46:31.921" endtime="20200325 16:46:32.136"></status>
+</suite>
+<suite id="s1-s2" name="RegistrationTest" source="C:\Users\prana\PycharmProjects\com.Newtours_RobotFramework\TestCases\RegistrationTest.robot">
+<test id="s1-s2-t1" name="RegistrationTest">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20200325 16:46:32.145" endtime="20200325 16:46:32.145"></status>
+</kw>
+<status status="PASS" starttime="20200325 16:46:32.145" endtime="20200325 16:46:32.145" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200325 16:46:32.137" endtime="20200325 16:46:32.145"></status>
+</suite>
+<status status="PASS" starttime="20200325 16:46:31.904" endtime="20200325 16:46:32.146"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" id="s1-s1" name="LoginTest">Suites.LoginTest</stat>
+<stat pass="1" fail="0" id="s1-s2" name="RegistrationTest">Suites.RegistrationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

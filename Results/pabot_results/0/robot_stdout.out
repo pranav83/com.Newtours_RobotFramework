@@ -1,0 +1,17 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.LoginTest                                                              
+==============================================================================
+LoginTest                                                             | FAIL |
+Title should have been 'Find a Flight: Mercury Tours:' but was 'Welcome: Mercury Tours'.
+------------------------------------------------------------------------------
+Suites.LoginTest                                                      | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\prana\PycharmProjects\com.Newtours_RobotFramework\Results\pabot_results\0\output.xml

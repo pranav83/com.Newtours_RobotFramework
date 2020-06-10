@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200325 17:03:18.548" rpa="false">
+<suite id="s1" name="LoginTest" source="C:\Users\prana\PycharmProjects\com.Newtours_RobotFramework\TestCases\LoginTest.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open My Browser" library="LoginKeyword">
+<arguments>
+<arg>${Siteurl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200325 17:03:18.739" level="INFO">Opening browser 'headlessfirefox' to base url 'http://www.newtours.demoaut.com/'.</msg>
+<status status="PASS" starttime="20200325 17:03:18.738" endtime="20200325 17:03:25.391"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200325 17:03:25.391" endtime="20200325 17:03:25.393"></status>
+</kw>
+<status status="PASS" starttime="20200325 17:03:18.738" endtime="20200325 17:03:25.393"></status>
+</kw>
+<kw name="Enter UserName" library="LoginKeyword">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200325 17:03:25.394" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20200325 17:03:25.394" endtime="20200325 17:03:25.419"></status>
+</kw>
+<status status="PASS" starttime="20200325 17:03:25.394" endtime="20200325 17:03:25.419"></status>
+</kw>
+<kw name="Enter Password" library="LoginKeyword">
+<arguments>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200325 17:03:25.420" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20200325 17:03:25.420" endtime="20200325 17:03:25.437"></status>
+</kw>
+<status status="PASS" starttime="20200325 17:03:25.419" endtime="20200325 17:03:25.437"></status>
+</kw>
+<kw name="Click SignIn" library="LoginKeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_signIN}</arg>
+</arguments>
+<msg timestamp="20200325 17:03:25.438" level="INFO">Clicking button 'xpath://input[@name='login']'.</msg>
+<status status="PASS" starttime="20200325 17:03:25.437" endtime="20200325 17:03:30.656"></status>
+</kw>
+<status status="PASS" starttime="20200325 17:03:25.437" endtime="20200325 17:03:30.656"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200325 17:03:33.659" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200325 17:03:30.657" endtime="20200325 17:03:33.659"></status>
+</kw>
+<kw name="Verify Succesful Login" library="LoginKeyword">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Find a Flight: Mercury Tours:</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200325 17:03:33.740" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200325 17:03:33.662" endtime="20200325 17:03:33.740"></status>
+</kw>
+<msg timestamp="20200325 17:03:33.742" level="FAIL">Title should have been 'Find a Flight: Mercury Tours:' but was 'Welcome: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20200325 17:03:33.660" endtime="20200325 17:03:33.742"></status>
+</kw>
+<status status="FAIL" starttime="20200325 17:03:33.659" endtime="20200325 17:03:33.742"></status>
+</kw>
+<status status="FAIL" starttime="20200325 17:03:18.738" endtime="20200325 17:03:33.742" critical="yes">Title should have been 'Find a Flight: Mercury Tours:' but was 'Welcome: Mercury Tours'.</status>
+</test>
+<status status="FAIL" starttime="20200325 17:03:18.550" endtime="20200325 17:03:33.746"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200325 17:03:18.734" level="ERROR">Error in file 'C:\Users\prana\PycharmProjects\com.Newtours_RobotFramework\Resources\LoginKeyword.robot': Variable file '..\PageObject\Locators.py' does not exist.</msg>
+</errors>
+</robot>
